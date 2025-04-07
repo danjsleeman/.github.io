@@ -2,30 +2,37 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Your Site Title</title>
+  <title>Your Site</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       display: flex;
       flex-wrap: wrap;
     }
 
     .left {
+      background-color: #cccca3;
+      padding: 40px;
       flex: 1;
       min-width: 250px;
       max-width: 300px;
-      margin-right: 40px;
+      box-sizing: border-box;
     }
 
     .left img {
       max-width: 100%;
       border-radius: 8px;
+      margin-bottom: 20px;
     }
 
     .right {
+      background-color: #edebe1;
+      padding: 40px;
       flex: 2;
       min-width: 300px;
+      box-sizing: border-box;
     }
 
     .section {
@@ -37,7 +44,7 @@
     }
 
     .section a {
-      color: blue;
+      color: #333;
       text-decoration: none;
     }
 
@@ -50,16 +57,15 @@
         flex-direction: column;
       }
 
-      .left {
-        margin-right: 0;
-        margin-bottom: 30px;
+      .left, .right {
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
   <div class="left">
-    <img src="your-image.jpg" alt="Your Image">
+    <img src="profile.jpg" alt="Your Image">
     <p>This is a short overview or bio. You can write a sentence or two about yourself or the purpose of this page.</p>
   </div>
 
@@ -75,8 +81,6 @@
       <p>More descriptive text for another area.</p>
       <a href="https://another.com">Another link</a>
     </div>
-
-    <!-- Add more sections as needed -->
   </div>
 </body>
 </html>
