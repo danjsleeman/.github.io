@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Your Site Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      margin-right: 40px;
+    }
+
+    .left img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .right {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      margin-bottom: 5px;
+    }
+
+    .section a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <img src="your-image.jpg" alt="Your Image">
+    <p>This is a short overview or bio. You can write a sentence or two about yourself or the purpose of this page.</p>
+  </div>
+
+  <div class="right">
+    <div class="section">
+      <h2>Section 1</h2>
+      <p>This is some description text.</p>
+      <a href="https://example.com">Visit this link</a>
+    </div>
+
+    <div class="section">
+      <h2>Section 2</h2>
+      <p>More descriptive text for another area.</p>
+      <a href="https://another.com">Another link</a>
+    </div>
+
+    <!-- Add more sections as needed -->
+  </div>
+</body>
+</html>
